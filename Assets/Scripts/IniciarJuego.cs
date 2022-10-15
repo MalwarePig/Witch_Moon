@@ -23,5 +23,6 @@ public class IniciarJuego : MonoBehaviour
     {
         Debug.Log("clicccc");
         SceneManager.LoadScene("Cocina1");
+         
     }
 }
