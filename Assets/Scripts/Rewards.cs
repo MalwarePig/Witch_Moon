@@ -5,11 +5,14 @@ using UnityEngine;
 public class Rewards : MonoBehaviour
 {
 
-     public GameObject[] PotionRewards;
+    GameObject Clone;
+
+
+    public GameObject[] PotionRewards;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -18,8 +21,11 @@ public class Rewards : MonoBehaviour
     }
 
     public void InvocarRewards()
-    { 
+    {
         int RewardRandom = Random.Range(0, PotionRewards.Length);
-        Instantiate(PotionRewards[RewardRandom], transform.position, transform.rotation); //This spawns the emeny                                                                        // Instantiate(Client, transform.position, transform.rotation); //This spawns the emeny
+        Clone = Instantiate(PotionRewards[RewardRandom], transform.position, transform.rotation); //This spawns the emeny           
+        Clone.tag = "ObjetoInteractivo";
+        Clone.name = "RecompensaActiva";
+        Destroy(PotionRewards[RewardRandom].gameObject);                                                     // Instantiate(Client, transform.position, transform.rotation); //This spawns the emeny;
     }
 }

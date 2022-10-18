@@ -196,10 +196,17 @@ public class FPS_Camera_Move : MonoBehaviour
 
     private void Apadrinar(Transform transformHijo)
     {
+
+
+     
+
         if (transformHijo.tag != "Untagged" && camera.childCount == 0)
         {
             transformHijo.parent = null;
+
+            if(transformHijo.name != "RecompensaActiva"){ 
             Instantiate(transformHijo);
+            }
         }
 
         if (camera.childCount == 0)
@@ -209,10 +216,9 @@ public class FPS_Camera_Move : MonoBehaviour
             transformHijo.eulerAngles = newRotation;
             transformHijo.tag = "Untagged";
 
-           LibroCocina.GetComponent<LibroRecetas>().IngredienteEnMano(transformHijo.name);
+            LibroCocina.GetComponent<LibroRecetas>().IngredienteEnMano(transformHijo.name);
             //Debug.Log("ObjetoActual: " + transformHijo.name);
         }
-
     }
 
     private void Soltar()

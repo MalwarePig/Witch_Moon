@@ -44,7 +44,7 @@ public class MovimientoMalla : MonoBehaviour
         agente = GetComponent<NavMeshAgent>();
         agente.destination = Objetivo.transform.position;
 
-        Debug.Log("Punto de venta: " + agente.destination);
+        //Debug.Log("Punto de venta: " + agente.destination);
     }
 
     public void RegresarCliente()
@@ -58,7 +58,7 @@ public class MovimientoMalla : MonoBehaviour
         ObjetivoRetorno = GameObject.FindGameObjectWithTag("Spawn");
 
         agente.destination = ObjetivoRetorno.transform.position;
-        Debug.Log("Punto de spawn: " + agente.destination);
+        //Debug.Log("Punto de spawn: " + agente.destination);
     }
 
 
