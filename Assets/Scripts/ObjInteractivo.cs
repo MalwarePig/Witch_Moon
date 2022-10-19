@@ -13,7 +13,7 @@ public class ObjInteractivo : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other)
-    {   Debug.Log(other.gameObject.name);
+    {   //Debug.Log(other.gameObject.name);
         if (other.gameObject.tag == "Caldero")
         { 
             Caldero = other;

@@ -51,7 +51,7 @@ public class LibroRecetas : MonoBehaviour
 
     public void IngredienteEnMano(string nombre)
     {
-        Debug.Log (nombre);
+        //Debug.Log (nombre);
         if (
             RecetaIniciada == true //Ejecutar solo si ya esta una receta activa si se toma un ingrediente antes de empezar
         )

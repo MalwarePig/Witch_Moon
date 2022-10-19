@@ -21,7 +21,7 @@ public class IniciarJuego : MonoBehaviour
 
     public void ComenzarJuego()
     {
-        Debug.Log("clicccc");
+        //Debug.Log("clicccc");
         SceneManager.LoadScene("Cocina1");
          
     }

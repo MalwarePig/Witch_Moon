@@ -50,6 +50,7 @@ public class GamePlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         Debug.Log("CocinarActivo: "+CocinarActivo);
         if (CocinarActivo == true)
         {
             if (
@@ -92,6 +93,7 @@ public class GamePlay : MonoBehaviour
 
     public void DetenerCocina() //Detiene contadores de Gameplay
     {
+        Debug.Log("ya me invocaron alv");
         timeReady = 3;
         CocinarActivo = false;
         timeRemaining = 30.0f;

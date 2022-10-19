@@ -26,6 +26,6 @@ public class Rewards : MonoBehaviour
         Clone = Instantiate(PotionRewards[RewardRandom], transform.position, transform.rotation); //This spawns the emeny           
         Clone.tag = "ObjetoInteractivo";
         Clone.name = "RecompensaActiva";
-        Destroy(PotionRewards[RewardRandom].gameObject);                                                     // Instantiate(Client, transform.position, transform.rotation); //This spawns the emeny;
+        //Destroy(PotionRewards[RewardRandom].gameObject);                                                     // Instantiate(Client, transform.position, transform.rotation); //This spawns the emeny;
     }
 }
