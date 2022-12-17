@@ -39,7 +39,6 @@ public class Caldero : MonoBehaviour
         }
     }
 
-
     public void ActivarEfectos()//Actifa efectos al dejar en caldero
     {
         transform.GetChild(0).gameObject.SetActive(true);//explosion

@@ -67,7 +67,7 @@ public class Palanca : MonoBehaviour
             Spawn = GameObject.FindGameObjectWithTag("Spawn");
             Spawn.GetComponent<Spawner>().MatarCliente();//Crear primero un clon de cliente 
         }
-
     }
-
 }
+
+
